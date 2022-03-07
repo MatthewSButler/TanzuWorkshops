@@ -43,7 +43,7 @@ Note the instructions state that this method is not for production. That is a ha
    .gitignore
    ```
 
-1. Build the image: `docker build -t df-nodejs-payment-calculator .`
+1. Build the image: `docker build -t df-nodejs-payment-calculator .`  If you get a failed to solve the frontend dockerfile.v0: failed to read... try renaming `Dockerfile` to `dockerfile`
 
 1. Run the container: `docker run -p 3030:3000 --env MY_INSTANCE_NAME=df_docker -d df-nodejs-payment-calculator`
 
